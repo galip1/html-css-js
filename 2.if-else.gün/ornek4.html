@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var boy = Number(prompt("boyunuzu giriniz"));
+        var kilo = Number(prompt("kilonuzu giriniz"));
+
+        var vücütKitle = kilo / (boy * boy);
+
+        let mesaj;
+
+        if (vücütKitle < 18.4) {
+            mesaj = "zayıf";
+
+        }
+        else if (vücütKitle > 18 && vücütKitle < 24) {
+            mesaj = "normal";
+        }
+        else if (vücütKitle >= 25 && vücütKitle < 29) {
+            mesaj = "idealin üstü";
+        }
+        else if (vücütKitle >= 30 && vücütKitle < 39) {
+            mesaj = "obez";
+        }
+        else if (vücütKitle >= 40) {
+            mesaj = "morbid obez";
+        } alert(mesaj);
+
+    </script>
+</body>
+
+</html>

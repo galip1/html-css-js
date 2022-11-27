@@ -1,0 +1,68 @@
+ul li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 25px;
+}
+
+ul li:first-child {
+  color: blueviolet;
+}
+ul li:last-child {
+  color: brown;
+}
+ul li:nth-child(odd) {
+  background-color: red;
+}
+ul li:nth-of-type(even) {
+  border: 2px solid blue;
+  border-radius: 10px;
+  background-color: aqua;
+}
+ul li:nth-of-type(odd) {
+  border: 2px solid burlywood;
+  border-radius: 10px;
+  background-color: darkolivegreen;
+}
+p::after {
+  content: "///";
+}
+p::first-line {
+  color: red;
+  word-spacing: 10px;
+  word-wrap: normal;
+  letter-spacing: 5px;
+}
+
+ul li {
+  display: inline-block;
+  width: 25%;
+}
+
+a {
+  padding: 10px;
+  background-color: coral;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  margin: 20px;
+  width: 12%;
+}
+div:hover span {
+  color: brown;
+}
+div::selection {
+  color: chartreuse;
+  cursor: pointer;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: aquamarine;
+}
+a:active {
+  color: chartreuse;
+}
+a:hover {
+  color: darkgreen;
+}

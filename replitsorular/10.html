@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1.personel dizisindeki devam değeri false olanların olmadığı yeni bir dizi oluşturalım.
+
+        //2.Bu yeni dizideki yaşı 30 üzerinde olanların maaşını %20, diğerlerini %5 artıralım
+
+        //3.son dizideki personelleri maaş büyüklüklerine göre sıralayalım.
+        var personel = [
+
+            { adi: "Umut", dogum: 1994, maas: 4000, devam: false },
+
+            { adi: "Neşe", dogum: 1989, maas: 4000, devam: true },
+
+            { adi: "Sevgi", dogum: 1985, maas: 4000, devam: true },
+
+            { adi: "Nehir", dogum: 1985, maas: 4000, devam: false },
+
+            { adi: "Derya", dogum: 1980, maas: 4000, devam: false },
+
+            { adi: "Ümit", dogum: 1998, maas: 4000, devam: true },
+
+            { adi: "Akın", dogum: 1988, maas: 4000, devam: false },
+
+            { adi: "Bulut", dogum: 1987, maas: 4000, devam: true },
+
+            { adi: "Deniz", dogum: 1998, maas: 4000, devam: false },
+
+        ];
+        const newPersonel = personel.filter(item => {
+            return item.devam === true;
+        });
+
+        console.log(newPersonel);
+
+        var date = new Date();
+        var mevcutYil = date.getFullYear();
+
+        for (var i = 0; i < newPersonel.length; i++) {
+            if (mevcutYil - newPersonel[i].dogum > 30) {
+                newPersonel[i].maas += newPersonel[i].maas * 0.2;
+            } else {
+                newPersonel[i].maas += newPersonel[i].maas * 0.05;
+            }
+        }
+        console.log(newPersonel);
+
+        var temp;
+        for (var i = 0; i < newPersonel.length; i++) {
+            for (var j = i + 1; j < newPersonel.length; j++) {
+                if (newPersonel[i].maas < newPersonel[j].maas) {
+                    temp = newPersonel[j];
+                    newPersonel[j] = newPersonel[i];
+                    newPersonel[i] = temp;
+                }
+            }
+        }
+        console.log(newPersonel);
+
+
+        /* function kayitSil(p) {
+             for (let i = 0; i < p.length; i++) {
+                 if (p[i].devam == false) //!personel[i].devam 
+                 {
+                     p[i] = p[i].isim + " isimli personel ayrıldı.";
+                 }
+ 
+             } return p;
+         }
+         kayitSil(personel);
+         console.log(kayitSil(personel));
+ */
+
+
+    </script>
+</body>
+
+</html>

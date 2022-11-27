@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var email1 = prompt("E-mail adresinizi giriniz.");
+        var sifre1 = prompt("Sfrenizi giriniz.");
+
+        const email = "email@hotmail.com";
+        const sifre = "emailcom";
+
+        let mesaj = "";
+
+        if (email1 === email && sifre1 === sifre
+        ) {
+            mesaj = "dogru giris yaptınız";
+        }
+        else {
+            mesaj = "tekrar deneyin";
+        }
+        alert(mesaj);
+
+    </script>
+</body>
+
+</html>

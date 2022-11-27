@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sayiTopla() {
+            var sayiAdedi = prompt("kaç sayı toplamak istersiniz.");
+
+
+            var sayi = 0;
+            var toplam = 0;
+            for (var i = 1; i <= sayiAdedi; i++) {
+
+                sayi = Number(prompt("bir sayı giriniz."));
+                toplam += sayi;
+
+            } return "girilen" + sayiAdedi +
+                " dır.Bu sayıların toplamı:" + toplam;
+        }
+
+        let sonuc = sayiTopla();
+        alert(sonuc);
+
+
+        /*
+             function sayiTopla(adet) {
+            var toplam = 0;
+            let sayi = 0
+            console.log(adet + " adet sayı gireceğinizi belirttiniz.")            
+            for (var i = 1; i <= adet; i++) { sayi = Number(prompt(i + ". sayınızı giriniz."))
+                console.log(i + ". sayınız: " + sayi)
+                toplam += sayi
+            }
+            return toplam;
+        }
+        let sonuc = sayiTopla(Number(prompt("Kaç adet sayı girmek istiyorsunuz.")))
+        alert("Girdiğiniz sayıların toplamı: " + sonuc)
+        */
+
+    </script>
+</body>
+
+</html>

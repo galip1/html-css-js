@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //aşağıdaki personelleri maaş büyüklüklerine göre sıralayınız.
+
+        /* let personel4 = { isim: "Arda", soyIsim: "Deniz", maas: 12700, };
+         let personel5 = { isim: "Mert", soyIsim: "Tan", maas: 10500, };
+         let personel6 = { isim: "Bülent", soyIsim: "Demir", maas: 14500, };
+ 
+ 
+ 
+         var maaslar=
+         let sira = "";
+         for (let i = 0; i < maaslar; i++) {
+             for (let k = i + 1; k < maaslar.length; k++) {
+                 if (maaslar[i] > maaslar[k]) {
+                     sira = maaslar[i];
+                     maaslar[i] = maaslar[k];
+                     maaslar[k] = sira;
+                 }
+             }
+         } console.log(maaslar);
+         console.log(sira);
+ */
+
+
+        let personel = [{
+            isim: "Arda",
+            soyIsim: "Deniz",
+            maas: 12700,
+        },
+        {
+            isim: "Mert",
+            soyIsim: "Tan",
+            maas: 10500,
+        },
+        {
+            isim: "Bülent",
+            soyIsim: "Demir",
+            maas: 14500,
+        }];
+        var temp;
+        for (var i = 0; i < personel.length; i++) {
+            for (var j = i + 1; j < personel.length; j++) {
+                if (personel[i].maas < personel[j].maas) {
+                    temp = personel[j];
+                    personel[j] = personel[i];
+                    personel[i] = temp;
+                }
+            }
+        }
+        console.log(personel);
+
+        /*
+            let personel4 = { isim: “Arda”, soyIsim: “Deniz”, maas: 12700 };
+    let personel5 = { isim: “Mert”, soyIsim: “Tan”, maas: 10500 };
+    let personel6 = { isim: “Bülent”, soyIsim: “Demir”, maas: 14500 };
+    let maas = [personel4.maas, personel5.maas, personel6.maas];
+    let bardak;
+    for (let i = 0; i < maas.length; i++) {
+      for (let k = i; k < maas.length; k++) {
+        if (maas[i] < maas[k]) {
+          bardak = maas[i];
+          maas[i] = maas[k];
+          maas[k] = bardak;
+        }
+      }
+    }
+    console.log(maas); 
+            
+            */
+    </script>
+</body>
+
+</html>

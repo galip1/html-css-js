@@ -1,0 +1,11 @@
+.fa-solid:hover + .mode {
+  background-color: black;
+  color: white;
+}
+
+.menu:hover .paragraf {
+  display: inline-block;
+}
+.paragraf {
+  display: none;
+}

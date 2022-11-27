@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* admine kac ktap kaydedeceğini sor,
+        kitap ismlserini adminden alarak belirttiği sayıda kitap kaydet,
+        */
+
+        /*  let kitap = {
+              isim: "",
+              yazar: "",
+              sayfaSayıs: "",
+  
+          };*/
+
+        let kacKitap = prompt("kaç kitap kaydedeksiniz");
+
+
+        for (let i = 1; i <= kacKitap; i++) {
+
+
+            let ad = prompt("kitap adı gir");
+            let soyAd = prompt("yazarı");
+            let sira = prompt("sayfası");
+
+
+            let i = {
+                isim: ad,
+                yazar: soyAd,
+                sayfaSayıs: sira,
+
+            };
+            console.log(i);
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

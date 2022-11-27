@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*   var sekil = "";
+           const satir = 7;
+           const sutun = 7;
+           for (var i = 1; i <= satir; i++) {
+               for (var k = i + 1; k <= satir; k++) {
+                   sekil += "*";
+               }
+               sekil = sekil + "\n";
+           }
+           console.log(sekil);
+           */
+
+        var sekil = "";
+        let row = 7;
+        for (let i = 1; i <= row; i++) {
+            for (let k = row; k >= i; k--) {
+                sekil += "*";
+            }
+            sekil += "\n";
+        }
+        console.log(sekil);
+
+    </script>
+</body>
+
+</html>

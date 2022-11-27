@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let sayi = Number(prompt
+            ("lütfen 100 den küçük bir tamsayı giriniz."));
+        let mesaj = "";
+
+        for (let i = 1; i <= sayi; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                mesaj += " for lopu ögrendik ";
+            }
+            else if (i % 5 == 0) {
+                mesaj += " ITF ";
+            }
+            else if (i % 3 == 0) {
+                mesaj += " javascript ";
+            }
+            else {
+                mesaj += i + " \n ";
+            }
+        }
+        console.log(mesaj);
+
+
+    </script>
+</body>
+
+</html>

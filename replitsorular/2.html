@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let personeller = [
+            {
+                isim: "Ali",
+                soyIsim: "Deniz",
+                maas: 13000,
+                devam: true,
+            },
+            {
+                isim: "Melek",
+                soyIsim: "Tan",
+                maas: 10000,
+                devam: false,
+            },
+            {
+                isim: "Büşra",
+                soyIsim: "Demir",
+                maas: 15000,
+                devam: true,
+            },
+            {
+                isim: "Arda",
+                soyIsim: "Deniz",
+                maas: 12700,
+                devam: false,
+            },
+            {
+                isim: "Mert",
+                soyIsim: "Tan",
+                maas: 10500,
+                devam: false,
+            },
+            {
+                isim: "Bülent",
+                soyIsim: "Demir",
+                maas: 14500,
+                devam: true,
+            },
+        ];
+
+
+        function kayitSil(p) {
+            for (let i = 0; i < p.length; i++) {
+                if (p[i].devam == false) //!personel[i].devam 
+                {
+                    p[i] = p[i].isim + " isimli personel ayrıldı";
+
+                }
+
+            } return p;
+        }
+
+        kayitSil(personeller);
+        console.log(kayitSil(personeller));
+
+        // function Sil(person) {
+        for (let i = 0; i < personeller.length; i++) {
+            if (personeller[i].devam == false) {
+                personeller[i] = personeller[i].isim + " isimli şahsı ayrıldı";
+            }
+        } //return person;
+        //  }
+        //    Sil(personeller);
+        console.log(personeller);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

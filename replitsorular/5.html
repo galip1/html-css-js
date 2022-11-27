@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var muzSayisi = 165;
+        var hayattaKalmaDays = 0;
+        var maymunAlive = true;
+        do {
+            muzSayisi -= 4;
+            hayattaKalmaDays++;
+            if (muzSayisi < 4) {
+                maymunAlive = false;
+                console.log("Bugun " + hayattaKalmaDays + ". gun ve Maymun oldu.");
+            } else {
+                console.log("Bugun " + hayattaKalmaDays + ".gun ve Maymun yasiyor.");
+            }
+        } while (maymunAlive);
+        console.log("Maymunun yasadigi toplam gun sayisi= ", hayattaKalmaDays - 1);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

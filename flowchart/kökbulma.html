@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function main() {
+            var a, b, c, d, x1, x2;
+
+            window.alert("a katsayısını girin");
+            a = Number(window.prompt('Enter a value for a'));
+            if (a == 0) {
+                window.alert("hatalı giriş, 2.derecede denkle belirtmez");
+            } else {
+                window.alert("lütfen b ve c katsayılarını girin");
+                b = Number(window.prompt('Enter a value for b'));
+                c = Number(window.prompt('Enter a value for c'));
+                d = Math.pow(b, 2) - 4 * a * c;
+                if (d >= 0) {
+                    x1 = (-b + Math.sqrt(d)) / (2 * a);
+                    x2 = (-b - Math.sqrt(d)) / (2 * a);
+                    window.alert("Kökler " + x1 + " ve " + x2);
+                } else {
+                    window.alert("reel kök yoktur");
+                }
+            }
+        } main();
+
+
+
+    </script>
+</body>
+
+</html>

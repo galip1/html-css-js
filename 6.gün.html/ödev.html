@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function sayiAl() {
+            var toplam = 0;
+            var sayi = 0;
+
+
+            while (toplam < 500) {
+                sayi = Number(prompt("Lütfen bir sayı giriniz."));
+                toplam += sayi;
+
+            }
+            return " yeterli, toplam: " + toplam + " a ulaştı";
+
+        }
+
+        let sonuc = sayiAl();
+        alert(sonuc);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tarih = new Date();
+        let saat = tarih.getHours();
+        let mesaj = "";
+
+        if (saat >= 08 && saat < 10) {
+            mesaj = "günaydın";
+
+        }
+        else if (saat >= 10 && saat < 18) {
+            mesaj = "iyi günler";
+
+        }
+        else if (saat >= 18 && saat < 23) {
+            mesaj = "iyi akşamlar";
+
+        }
+        else {
+            mesaj = "iyi geceler";
+
+        }
+
+        alert(mesaj);
+
+
+    </script>
+</body>
+
+</html>

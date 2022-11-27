@@ -1,0 +1,38 @@
+* {
+  font-size: 1rem;
+}
+
+h1 {
+  background-color: red;
+  border: 10px;
+  border-style: dashed;
+  border: 25px 20px 15px 10px;
+  padding: 2px;
+  margin: 5px;
+  font-size: 2rem;
+}
+
+p {
+  color: red;
+}
+p.a {
+  background-color: yellow;
+}
+.anasayfa {
+  background-color: brown;
+}
+.iletişim {
+  background-color: blue;
+}
+.personeller {
+  background-color: aquamarine;
+}
+#ana {
+  background-color: chartreuse;
+}
+#ilet {
+  background-color: crimson;
+}
+#person {
+  background-color: aqua;
+}

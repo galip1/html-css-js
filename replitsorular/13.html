@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*1 Yukarıdaki dizideki sayıların ortalamasını bulalım(fonksiyon ile)
+                2 ortalamadan küçük olan sayıları diziden çıkaralım
+                 3 yeni dizinin ortalamasını alalım
+                4 ortalamadan küçük olan sayıları diziden çıkaralım
+                5 bu işlemi dizide son bir sayı kalana kadar tekrarlayalım */
+
+        //1 cevap
+        let sayiArr = [231, 45, 675, 89, 76, 345, 145, 278, 98, 203, 430]
+
+        let toplam = 0;
+        let ort = "";
+
+        for (let i = 0; i < sayiArr.length; i++) {
+            toplam += sayiArr[i];
+            ort = toplam / sayiArr.length;
+
+
+        } console.log(toplam);
+        console.log(ort);
+
+
+
+    </script>
+</body>
+
+</html>

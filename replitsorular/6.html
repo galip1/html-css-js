@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Asagidaki sekli yazdiran kodu yaziniz // 1 2 3 4 5 6 // 2 3 4 5 6 // 3 4 5 6 // 4 5 6 // 5 6 // 6 //
+
+
+
+
+
+        /*  let sekil = "";
+          let satir = 6;
+          var sütün = [1, " ", 2, " ", 3, " ", 4, " ", 5, " ", 6];
+  
+  
+  
+          for (let i = 0; i < satir; i++) {
+              for (let k = i; k < sütün.length; k++) {
+                  if (k >= i * 2) {
+                      sekil += sütün[k];
+                  }
+  
+                  else {
+                      sekil += " ";
+                  }
+              } sekil += "\n";
+          } console.log(sekil);
+          */
+
+        var sekil = "";
+        for (let satir = 1; satir <= 6; satir++) {
+            for (let bosluk = 1; bosluk < satir; bosluk++) {
+                sekil += "";
+            }
+            for (let rakam = satir; rakam <= 6; rakam++) {
+                sekil += rakam + "";
+            }
+            sekil += "\n";
+        }
+        console.log(sekil);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // ** Ortalama yaşı bulan programı yazınız.
+        var personel = [
+            { adi: "Ali", dogum: 1990, maas: 4000 },
+            { adi: "Veli", dogum: 1977, maas: 5000 },
+            { adi: "Ayşe", dogum: 1975, maas: 5300 },
+            { adi: "Hasan", dogum: 1985, maas: 4500 },
+        ];
+
+        //cevap=1
+        /*    var date = new Date();
+            var mevcutYil = date.getFullYear();
+    
+            var ortalamaYas = 0;
+    
+            ortalamaYas = (personel[0][1] + personel[1][1] +
+                personel[2][1] + personel[3][1]) / 4;
+            console.log(ortalamaYas);
+    
+    */
+
+        var personel = [
+            { adi: "Ali", dogum: 1990, maas: 4000 },
+            { adi: "Veli", dogum: 1977, maas: 5000 },
+            { adi: "Ayşe", dogum: 1975, maas: 5300 },
+            { adi: "Hasan", dogum: 1984, maas: 4500 }
+        ];
+        var date = new Date();
+        var mevcutYil = date.getFullYear();
+        var ortalama;
+        var yas = 0;
+        for (let i = 0; i < personel.length; i++) {
+            yas += mevcutYil - personel[i].dogum;
+            var ortalama = yas / personel.length;
+        }
+        console.log(ortalama);
+
+
+
+
+        var date = new Date();
+        var mevcutYil = date.getFullYear();
+
+        for (var i = 0; i < personel.length; i++) {
+            if (mevcutYil - personel[i].dogum >= 45) {
+                personel[i].maas = personel[i].maas * 1.3;
+            } else {
+                personel[i].maas = personel[i].maas * 1.35;
+            }
+        }
+        console.log(personel);
+
+
+
+
+    </script>
+</body>
+
+</html>

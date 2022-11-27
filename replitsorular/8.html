@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sayi = prompt("bir sayı yazınız");
+        let toplam = 0;
+
+        while (sayi > 0) {
+            toplam += sayi % 10;
+            sayi = Math.floor(sayi / 10);
+        }
+        console.log(toplam);
+
+        /* var input = Number(prompt(“En az iki rakamli bir sayi giriniz.“));
+         let rakam = 0;
+         let rakamlarinToplami = 0;
+         while (input > 0) {
+             rakam = input % 10;
+             rakamlarinToplami += rakam;
+             input = Math.floor(input / 10);
+         }
+         console.log(rakamlarinToplami);
+ */
+        /*    let sayi = Number(prompt("bir sayı yazınız"));
+    
+            let toplam = 0;
+    
+            for (let i = 0; i <= sayi; i++) {
+                if (sayi > 0)
+                    toplam += sayi % 10;
+                sayi = Math.floor(sayi / 10);
+    
+            } console.log(toplam);
+            */
+
+    </script>
+</body>
+
+</html>
