@@ -1,68 +1,75 @@
-ul li {
-  list-style-type: none;
-  padding: 10px;
-  margin: 25px;
-}
+/* header */
 
-ul li:first-child {
-  color: blueviolet;
+.baslık {
+  background-color: rgb(247, 153, 119);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
 }
-ul li:last-child {
-  color: brown;
+.header-search {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding-right: 5rem;
+  padding-top: 10px;
 }
-ul li:nth-child(odd) {
-  background-color: red;
-}
-ul li:nth-of-type(even) {
-  border: 2px solid blue;
-  border-radius: 10px;
-  background-color: aqua;
-}
-ul li:nth-of-type(odd) {
-  border: 2px solid burlywood;
-  border-radius: 10px;
-  background-color: darkolivegreen;
-}
-p::after {
-  content: "///";
-}
-p::first-line {
-  color: red;
-  word-spacing: 10px;
-  word-wrap: normal;
-  letter-spacing: 5px;
-}
-
-ul li {
-  display: inline-block;
-  width: 25%;
-}
-
-a {
-  padding: 10px;
-  background-color: coral;
-  border-radius: 10px;
+.header-link a,
+.header-logo a,
+footer a {
   text-decoration: none;
-  display: block;
-  margin: 20px;
-  width: 12%;
+  padding: 10px;
 }
-div:hover span {
-  color: brown;
+.header-link a:hover,
+.header-logo a:hover,
+footer a:hover {
+  text-decoration: underline;
+  color: red;
 }
-div::selection {
-  color: chartreuse;
-  cursor: pointer;
+
+/* header */
+
+/* body */
+
+section {
+  display: flex;
 }
-a:link {
-  color: black;
+aside {
+  background-color: rgb(93, 131, 133);
+  flex: 300px;
+  padding: 2rem;
 }
-a:visited {
-  color: aquamarine;
+aside .konu {
+  display: flex;
+  margin: 10px;
+  padding: 0;
 }
-a:active {
-  color: chartreuse;
+main {
+  background-color: rgb(167, 190, 233);
+  display: flex;
+  flex: 700px;
 }
-a:hover {
-  color: darkgreen;
+main .resim {
+  padding-right: 10px;
 }
+img {
+  width: 200px;
+  height: 100%;
+}
+main div {
+  text-align: justify;
+}
+
+/* body */
+
+/* footer */
+
+footer {
+  background-color: rgb(226, 190, 100);
+  display: flex;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+footer div a {
+  padding-right: 1rem;
+}
+
+/* footer */
