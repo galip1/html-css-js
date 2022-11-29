@@ -1,0 +1,31 @@
+header,
+footer {
+  background-color: blue;
+  border-radius: 5px;
+  height: 120px;
+}
+main {
+  display: flex;
+}
+section {
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px;
+  flex: 3;
+  padding: 1rem 1.5rem;
+}
+aside {
+  flex: 1;
+  border-radius: 5p;
+  background-color: chartreuse;
+}
+.item-container {
+  display: flex;
+  gap: 1.8rem;
+}
+.item {
+  width: 70px;
+  height: 70px;
+  border: solid 2px red;
+  margin: 5px;
+}
