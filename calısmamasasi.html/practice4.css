@@ -1,38 +1,65 @@
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 2rem 0;
-  background-color: antiquewhite;
+:root {
+  --color1: #e7c4ff;
+  --color2: #ffedff;
+  --color3: #7d03a5;
+  --sub-menu-width: 150px;
 }
-.seyehat {
+nav.menu {
+  background-color: var(--color2);
   text-align: center;
 }
-.seyehat > div {
+/* tüm ul ler */
+nav.menu ul {
+  list-style-type: none;
+  margin: 0;
+}
+/* 1. seviye elemenlrı ynayna getirmek için */
+nav.menu > ul > li {
   display: inline-block;
-  width: 25%;
-  margin-right: 1rem;
-  border: solid 10px rgb(219, 202, 202);
-  padding: 10px;
 }
-.seyehat > div div {
+
+/*  tüm li ler için  */
+nav.menu > ul li {
+  position: relative;
+}
+/* ilk seviye menu den sonarkı menuleri secer */
+nav.menu > ul > li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 2.1rem;
   text-align: left;
-  margin: 10px;
+  border: solid 1px var(--color1);
+  width: var(--sub-menu-width);
 }
-.seyehat div div span {
-  font-size: 1.5rem;
-  color: mediumorchid;
-  font-weight: 700;
-  margin-right: 2rem;
+/* 3. ve sonrakı seviye listeleri yana açılması için*/
+nav.menu > ul li > ul > li ul {
+  left: var(--sub-menu-width);
+  top: 0;
 }
-.seyehat div div a {
-  background-color: blue;
-  padding: 0.5rem 1rem;
-  color: white;
+/*  tum a tagları ıcın */
+nav.menu a {
   text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-weight: bold;
 }
-.seyehat div div a:hover,
-.seyehat div div span:hover {
-  opacity: 0.6;
-  text-decoration: underline;
-  cursor: pointer;
+/* li lere hover vernce child olan ul lrı göstermek ıcn */
+nav.menu li:hover > ul {
+  display: inline-block;
+}
+
+/* ilk seviye li ler */
+nav.menu > ul > li {
+  background-color: var(--color1);
+}
+nav.menu > ul > li:hover {
+  background-color: var(--color3);
+}
+nav.menu > ul > li:hover > a {
+  color: white;
+}
+nav.menu > ul > li li a:hover {
+  background-color: #e7c4ff;
 }
